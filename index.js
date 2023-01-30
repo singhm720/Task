@@ -1,0 +1,29 @@
+$(() => {
+    $('#chart').dxChart({
+      palette: 'Harmony Light',
+      dataSource: zoomingData,
+      series: [{
+        argumentField: 'arg',
+        valueField: 'y1',
+      }, {
+        argumentField: 'arg',
+        valueField: 'y2',
+      }],
+      argumentAxis: {
+        visualRange: {
+          startValue: 0,
+          endValue: 100,
+        },
+      },
+      scrollBar: {
+        visible: true,
+      },
+      zoomAndPan: {
+        argumentAxis: 'both',
+      },
+      legend: {
+        visible: false,
+      },
+    }).dxChart('instance');
+  });
+  
