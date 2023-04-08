@@ -2,6 +2,9 @@ const query = encodeURI("SELECT pickup_datetime, trip_distance FROM 'JSON.csv' L
 const count = encodeURI("count=true");
 debugger;
 $.ajax({
+
+
+    
     type: "GET",
     url: "JSON_DATA.csv",
     // url : "http://127.0.0.1:5500/exp?query=SELECT%20pickup_datetime,%20trip_distance%20FROM%20'JSON_DATA.csv'&limit=5",
